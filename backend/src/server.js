@@ -9,7 +9,7 @@ app.use(cors()); // Permite peticiones desde el frontend
 app.use(express.json()); // Parsea el body como JSON
 
 // Aquí importarías tus rutas, por ejemplo:
-// app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/auth', require('./routes/authRoutes'));
 // app.use('/api/productos', require('./routes/productoRoutes'));
 
 const PORT = process.env.PORT || 3000;
